@@ -25,3 +25,14 @@ SIPHON V0.1.0
 - permission issues, you will be notified before scan begins that there may be some issues 
 
 **Im still learning how this librabry works and i will update as much as i can, the goal is not to finish this quick but to ensure i grasp how the library works and ensure my programing skills are improving.**
+
+
+## Updates — 12/18/2025
+
+- feat: add custom filetype selection using sets
+- fix: process all custom filetypes before exiting custom mode
+
+### Notes
+- Early match-case workflow implemented for prototype
+- Application currently scans only the current working directory
+- Subdirectory traversal is not yet implemented (planned as part of learning pathlib)
