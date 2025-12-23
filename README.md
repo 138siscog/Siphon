@@ -36,3 +36,19 @@ SIPHON V0.1.0
 - Early match-case workflow implemented for prototype
 - Application currently scans only the current working directory
 - Subdirectory traversal is not yet implemented (planned as part of learning pathlib)
+
+#######################################################################################
+
+## Updates — 12/22/2025
+
+- feat: You are now able to place a flag.txt in any drive, your files  will be moved to the parent directory of the flag (currently limited to 1 flag only)
+- issues: 
+* This currently works only for match type 1, will apply to to other match cases soon
+* This currently only still works with moving files in the cwd (current working directory) to parent directory of the flag
+* If multiple flags found app just loops infinitly and files do not move, need to add edge cases for this
+* 
+
+### Notes
+- Early flag system implemented for prototype
+- Application currently scans only the current working directory and moves files to parent directory of flag location
+- the flag will be located even if located in sub folder
