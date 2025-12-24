@@ -52,3 +52,30 @@ SIPHON V0.1.0
 - Early flag system implemented for prototype
 - Application currently scans only the current working directory and moves files to parent directory of flag location
 - the flag will be located even if located in sub folder
+
+
+#######################################################################################
+
+# Updates — 12/23/2025
+
+- feat: You are now able to place a flag.txt in any drive, your files  will be moved to the parent directory of the flag (currently limited to 1 flag only)
+- issues: 
+* The flag file is detected even if it is placed inside a subfolder.
+* (Currently limited to a single flag file)
+
+## known Issues 
+- The application currently only moves files from the current working directory (CWD).
+- If multiple flag.txt files are found, the application enters an infinite loop and files are not moved.
+- Edge-case handling for multiple flags is planned.
+
+### Notes
+- Early flag-based destination system implemented as part of the prototype phase.
+- Destination is determined by the parent directory of the detected flag file.
+- Source scanning is intentionally limited to the current working directory for safety during early development.
+
+#### Refactor
+- Before adding new features, the codebase will be refactored to:
+    - Remove duplicated logic
+    - Improve readability and structure
+    - Prepare for safer edge-case handling
+- Development will continue regularly after the refactor phase.
